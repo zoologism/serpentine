@@ -54,7 +54,7 @@ class Cell
     elsif @bonus
       "£".yellow
     else
-      "."
+      " "
     end
   end
 
@@ -98,12 +98,15 @@ class Grid
   end
 
   def draw
+    puts "__________________________________________"
     @grid.each do |line|
+      print "|"
       line.each do |ch|
         print "#{ch.char} "
       end
-      puts
+      puts "|"
     end
+    puts "‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
   end
 
 end
