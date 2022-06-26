@@ -15,13 +15,13 @@ def serpentine
 end
 
 def quitter
-  puts "Oops! Play again? (y/n)"
+  print " Oops! Play again? (y/n) "
   response = gets.chomp
   if response.downcase == "y"
     Cell.reset
     serpentine
   elsif response.downcase == "n"
-    puts "\nGoodbye! Sssee you sssooon..."
+    puts "\n Goodbye! Sssee you sssooon..."
     sleep(1)
     exit
   else

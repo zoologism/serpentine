@@ -98,15 +98,15 @@ class Grid
   end
 
   def draw
-    puts "__________________________________________"
+    puts " _________________________________________"
     @grid.each do |line|
-      print "|"
+      print " ⎸"
       line.each do |ch|
         print "#{ch.char} "
       end
-      puts "|"
+      puts "⎸"
     end
-    puts "‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
+    puts " ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾"
   end
 
 end

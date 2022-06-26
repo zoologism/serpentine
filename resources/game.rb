@@ -30,7 +30,7 @@ class Game
   end
 
   def scoreline
-    print "Score: #{@score} | Level: #{@level - 1} | High score: #{@@high_score}"
+    print " Score: #{@score} | Level: #{@level - 1} | High score: #{@@high_score}"
     if Cell.all.any?(&:bonus)
       print " | #{(@bonus_cell.bonus_expiry - Time.now).ceil(1)}"
     end
@@ -64,7 +64,7 @@ class Game
 
   def play
     board
-    puts "          ↑ W  ↓ S  ← A  → D"
+    puts "            ↑ W  ↓ S  ← A  → D"
     key = ""
 
     until @keys.flatten(2).include? key
